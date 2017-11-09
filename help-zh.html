@@ -116,13 +116,17 @@
         $('.desc').hide();
         $(location.hash).removeClass('collapse').find('.desc').slideToggle(200);
 
+        var preEle = null;
         $('.title').on('click', function() {
             var $parent = $(this).closest('.cell');
             var $content = $parent.find('.desc');
             $parent.toggleClass('collapse');
+
+            preEle && !preEle.is($content) && preEle.slideToggle();
             $content.slideToggle(200);
-            var $arrow = $(this).find('.arrow');
-            $arrow.toggleClass('rotate');
+            preEle = $content;
+
+            $(this).find('.arrow').toggleClass('rotate');
         });
     });
 </script>
