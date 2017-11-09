@@ -9,7 +9,7 @@ html.responsive {
 body {
     margin: 0;
     color: #333;
-    font: 14px/1.5 "Hiragino Sans GB", "Microsoft Yahei", "SimHei", sans-serif;
+    font: 14.5px/1.5 "Hiragino Sans GB", "Microsoft Yahei", "SimHei", sans-serif;
     text-rendering: optimizelegibility;
 }
 img {
@@ -81,6 +81,7 @@ a:hover, a:focus {
 .cell .title {
     background-image: none;
     -webkit-transition: backgroung-color .2s;
+    font-size: 15px;
 }
 .cell .title:hover {
     background-color: #fafafa;
