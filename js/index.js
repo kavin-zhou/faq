@@ -17,9 +17,16 @@ $(function () {
         var $content = $parent.find('.desc');
         $parent.toggleClass('collapse');
 
-        preEle && !preEle.is($content) && preEle.slideToggle();
         $content.slideToggle(200);
-        preEle = $content;
+
+        if (preEle && preEle.is($content)) {
+            preEle = null;
+        }
+        else {
+            preEle && preEle.slideToggle();
+            preEle = $content;
+        }
+        
 
         $(this).find('.arrow').toggleClass('rotate');
     });
