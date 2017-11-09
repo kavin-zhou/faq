@@ -1,0 +1,118 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+html.responsive {
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+    color: #333;
+    font: 14px/1.5 "Hiragino Sans GB", "Microsoft Yahei", "SimHei", sans-serif;
+    text-rendering: optimizelegibility;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+a, .link {
+    color: #7ea92a;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+.page-container {
+    width: 1000px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    *zoom: 1;
+}
+.responsive .page-container {
+    width: auto;
+    max-width: 1000px;
+    margin: 20px auto 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.page-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cell {
+    background-color: #fff;
+    /*border: 1px solid #ddd;*/
+    border-radius: 4px;
+    margin-bottom: 18px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+.cell .title {
+    padding: 10px 15px 10px 25px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 3px 3px 0 0;
+    margin-bottom: -1px;
+    background-color: #fafafa;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.cell.collapse .title {
+
+}
+.cell .title:hover {
+    background-color: #eee;
+}
+.cell .desc {
+    padding: 15px 15px 15px 25px;
+}
+.desc p {
+    text-indent: 2em;
+}
+.cell {
+    position: relative;
+    margin-bottom: 10px;
+}
+.cell .title {
+    background-image: none;
+    -webkit-transition: backgroung-color .2s;
+}
+.cell .title:hover {
+    background-color: #fafafa;
+}
+.cell .title:active {
+    background-color: #ddd;
+}
+/*.cell .title:after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*left: 10px;*/
+    /*top: 15px;*/
+    /*border-left: .4em solid transparent;*/
+    /*border-right: .4em solid transparent;*/
+    /*border-top: .7em solid #777;*/
+/*}*/
+/*.cell.collapse .title:after {*/
+    /*border-top: 0.4em solid transparent;*/
+    /*border-bottom: 0.4em solid transparent;*/
+    /*border-left: 0.7em solid #777;*/
+/*}*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+.arrow {
+    position: absolute;
+    width: 15px;
+    height: 21px;
+    right: 20px;
+    vertical-align: middle;
+}
+.rotate {
+    transform:rotateZ(90deg);
+}
