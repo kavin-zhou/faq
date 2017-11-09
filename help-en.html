@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans" class="responsive">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助中心</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum=1, user-scalable=no">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<div class="page-container">
+    <div class="cell">
+        <div class="title">测试测试</div>
+        <div class="desc">
+            中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国
+        </div>
+    </div>
+    <div class="cell">
+        <div class="title">测试测试</div>
+        <div class="desc">
+            中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国
+        </div>
+    </div>
+    <div class="cell">
+        <div class="title">测试测试</div>
+        <div class="desc">
+            中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国
+        </div>
+    </div>
+    <div class="cell">
+        <div class="title">测试测试</div>
+        <div class="desc">
+            中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国中国
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        document.addEventListener('touchstart', function() {}, false);
+
+        $('.cell').addClass('collapse');
+        $('.desc').hide();
+        $(location.hash).removeClass('collapse').find('.desc').slideToggle(200);
+
+        $('.title').on('click', function() {
+            var $parent = $(this).closest('.cell');
+            var $content = $parent.find('.desc');
+            $parent.toggleClass('collapse');
+            $content.slideToggle(200);
+        });
+    });
+</script>
+</body>
+</html>
