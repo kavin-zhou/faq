@@ -89,15 +89,19 @@ $(function () {
 
         $content.slideToggle(200);
 
-        if (preEle && preEle.is($content)) {
-            preEle = null;
+        if (preEle) {
+            if (preEle.is($content)) {
+                preEle = null;
+            }
+            else {
+                preEle.slideToggle();
+                preEle.closest('.cell').find('.title').find('.arrow').toggleClass('rotate');
+                preEle = $content;
+            }
         }
         else {
-            preEle && preEle.slideToggle();
             preEle = $content;
         }
-
-
         $(this).find('.arrow').toggleClass('rotate');
     });
 });
