@@ -3,6 +3,7 @@
  */
 
 $(function () {
+    FastClick.attach(document.body);
     var dataSource = null;
 
     dataSource = [
@@ -79,7 +80,7 @@ $(function () {
 
     $('.cell').addClass('collapse');
     $('.desc').hide();
-    $(location.hash).removeClass('collapse').find('.desc').slideToggle(200);
+    $(location.hash).removeClass('collapse').find('.desc').slideToggle(100);
 
     var preEle = null;
     $('.title').on('click', function() {
@@ -87,7 +88,7 @@ $(function () {
         var $content = $parent.find('.desc');
         $parent.toggleClass('collapse');
 
-        $content.slideToggle(200);
+        $content.slideToggle(100);
 
         if (preEle) {
             if (preEle.is($content)) {
