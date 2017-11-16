@@ -70,7 +70,7 @@ $(function () {
        var $cell = $('<div class="cell"></div>');
        var $title = $('<div class="title">'+ model.q +'</div>');
        var $desc = $('<div class="desc">'+ model.a +'</div>');
-        $cell.append($title).append($desc);
+       $cell.append($title).append($desc);
        $('.page-container').append($cell);
     });
 
