@@ -59,7 +59,7 @@ a:hover, a:focus {
     overflow: hidden;
 }
 .cell .title {
-    padding: 10px 15px 10px 25px;
+    padding: 10px 25px 10px 25px;
     border-bottom: 1px solid #ddd;
     border-radius: 3px 3px 0 0;
     margin-bottom: -1px;
