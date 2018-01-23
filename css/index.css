@@ -93,7 +93,7 @@ a:hover, a:focus {
     background-color: #fafafa;
 }
 .cell .title:active {
-    background-color: #ddd;
+    /*background-color: #ddd;*/
 }
 /*.cell .title:after {*/
     /*content: "";*/
